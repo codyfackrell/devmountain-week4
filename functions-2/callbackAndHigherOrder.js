@@ -139,7 +139,6 @@ each(names, eachPrint = (item, index) => {
 })
 
 
-
 ////////// CHALLENGES //////////
 
 
@@ -174,7 +173,7 @@ const addingFactory = num1 => (num2) => num1 + num2
   10 as an arguemnt.
 */
 
-// CODE HERE
+const addTen = addingFactory(10)
 
 /*
   Now the inner function is stored in the addTen variable! 
@@ -186,7 +185,9 @@ const addingFactory = num1 => (num2) => num1 + num2
   to see the different outputs.
 */
 
-// CODE HERE
+console.log(addTen(3))
+
+console.log(addTen(6))
 
 /*
   Let's make another function from the addingFactory. 
@@ -199,9 +200,9 @@ const addingFactory = num1 => (num2) => num1 + num2
   to add any number to your favorite number!
 */
 
-// CODE HERE
+const addFiftySix = addingFactory(56);
 
-
+console.log(addFiftySix(4))
 
 
 ////////// CHALLENGE 2 //////////
