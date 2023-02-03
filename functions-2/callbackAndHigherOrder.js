@@ -109,8 +109,9 @@ const uniq = (arr, cb) => {
   'The new names array with all the duplicate items removed is [UNIQARRPARAM].'
 */
 
-// CODE HERE
-
+uniq(names, namePrint = (uniqArr) => {
+  console.log("The new names array with all the duplicate items removed is " + uniqArr)
+})
 
 
 ////////// PROBLEM 6 //////////
@@ -120,8 +121,11 @@ const uniq = (arr, cb) => {
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-// CODE HERE 
-
+const each = (arr, cb) => {
+  for(let i = 0; i < arr.length; i++) {
+    cb(arr[i], i)
+  }
+}
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -130,9 +134,9 @@ const uniq = (arr, cb) => {
   'The item at index [INDEXPARAM] is [ITEMPARAM].'
 */
 
-// CODE HERE
-
-
+each(names, eachPrint = (item, index) => {
+  console.log(`The item at index ${index} is ${item}.`)
+})
 
 
 
@@ -156,7 +160,7 @@ const uniq = (arr, cb) => {
   the two parameters together and return the sum.
 */
 
-// CODE HERE
+const addingFactory = num1 => (num2) => num1 + num2
 
 /*
   Now that you have addingFactory, you can create other
@@ -239,6 +243,6 @@ var users = [
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-getUserById(users, '16t', user => {
-  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
-})
+// getUserById(users, '16t', user => {
+//   console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
+// })
