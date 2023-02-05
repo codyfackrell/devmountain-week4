@@ -80,7 +80,7 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 */
 
 /*
-    1. Name - string because the input would contain letters and words. basic information to identify the customer. 
+    1. Name - String because the input would contain letters and words. basic information to identify the customer. 
     2. Phone number - Number - the input would only be numbers. For loytaly program, reservations, etc.
     3. Address - String - the input would be letters and numbers. This would allow the restuarant to send the customer ads, coupons, etc. 
     4. Loyalty Program - Boolean - to provide a true or false if the customer is enrolled. This would allow the resturant to know if the customer is enrolled in their loyalty program. If false, then the resturant can market to this customer. 
