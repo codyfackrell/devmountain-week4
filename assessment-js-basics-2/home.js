@@ -133,4 +133,4 @@ console.log(deals[0].title.replace('15', '10'))
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+console.log(deals[1].desc.trim().replace('March', 'April'))
