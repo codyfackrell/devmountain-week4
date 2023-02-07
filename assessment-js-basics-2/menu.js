@@ -30,7 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+let pizza = {
+    name: 'Margherita',
+    price: 12.99,
+    category: 'Entree', 
+    popularity: 87,
+    rating: 4.2,
+    tags: ['fresh', 'mozzarella', 'basil']
+}
 
 
 
