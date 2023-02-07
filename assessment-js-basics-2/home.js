@@ -117,8 +117,7 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
-
+console.log(deals[0].title.replace('15', '10'))
 
 
 /*
