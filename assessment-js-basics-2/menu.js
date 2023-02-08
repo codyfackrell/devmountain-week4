@@ -40,7 +40,6 @@ let pizza = {
 }
 
 
-
 //////////////////PROBLEM 2////////////////////
 /* 
     Let's print a few values from our pizza object.
@@ -49,7 +48,7 @@ let pizza = {
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -59,7 +58,7 @@ let pizza = {
     get the value.
 */
 
-//CODE HERE
+console.log(pizza.tags[1])
 
 
 /*
@@ -69,7 +68,9 @@ let pizza = {
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let {price} = pizza;
+
+console.log(price)
 
 
 /*
@@ -79,7 +80,9 @@ let pizza = {
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let typeOfDish = pizza.category; 
+
+console.log(typeOfDish)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -94,8 +97,52 @@ let pizza = {
     data in some functions that you'll write.
 */
 
-//CODE HERE
+const foodArr = [
+    {
+    name: 'Margherita',
+    price: 12.99,
+    category: 'Entree', 
+    popularity: 87,
+    rating: 4.2,
+    tags: ['fresh', 'mozzarella', 'basil']
+    },
 
+    {
+    name: 'Combo',
+    price: 13.49,
+    category: 'Entree', 
+    popularity: 81,
+    rating: 4.4,
+    tags: ['vegatables', 'cheese', 'sausage']
+    },
+
+    {
+    name: 'Pepporoni',
+    price: 9.99,
+    category: 'Entree', 
+    popularity: 79,
+    rating: 4.1,
+    tags: ['gluten-free', 'pepporoni', 'cheese']
+    },
+
+    {
+    name: 'Garlic Bread',
+    price: 5.99,
+    category: 'Side', 
+    popularity: 92,
+    rating: 4.6,
+    tags: ['garlic', 'sourdough bread', 'side']
+    },
+    
+    {
+    name: 'Ranch',
+    price: 0.75,
+    category: 'Side', 
+    popularity: 94,
+    rating: 4.8,
+    tags: ['ranch', 'side', 'housemade']
+    }
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -110,10 +157,9 @@ let pizza = {
     your food objects has.
 */
 
-//CODE HERE
+
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
 
 
 //////////////////PROBLEM 5////////////////////
