@@ -157,10 +157,9 @@ const foodArr = [
     your food objects has.
 */
 
+const filteredFood = foodArr.filter((element) => element.tags.includes("cheese"))
 
-
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
