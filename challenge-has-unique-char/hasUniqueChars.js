@@ -7,11 +7,7 @@ const uniqueChars = (word) => {
         charsSet.add(word[i])
     }
     
-    if(charsSet.size === word.length) {
-        console.log(true)
-    } else {
-        console.log(false)
-    }
+    console.log(charsSet.size === word.length) 
 }
 
 uniqueChars("moonday")
