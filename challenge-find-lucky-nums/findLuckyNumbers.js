@@ -23,4 +23,4 @@ function luckyNumbers(num) {
     console.log(numOutput)
   }
   
-  luckyNumbers(5)
+  luckyNumbers(7)
