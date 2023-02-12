@@ -1,3 +1,5 @@
+// Given a word, return 'true' if that word contains only unique characters. Return 'false' otherwise.
+
 const uniqueChars = (word) => {
     const charsSet = new Set();
     
@@ -13,3 +15,4 @@ const uniqueChars = (word) => {
 }
 
 uniqueChars("moonday")
+uniqueChars("monday")
