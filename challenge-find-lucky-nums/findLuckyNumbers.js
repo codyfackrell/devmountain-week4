@@ -11,15 +11,16 @@
 
 
 function luckyNumbers(num) {
-    let numOutput = [];
+  let possibleNums = [1,2,3,4,5,6,7,8,9,10]
+  let numOutput = [];
   
-    for(i = 0; i < num; i++){
-      if(numOutput[i] !== i)
-        numOutput.push(Math.round(Math.random() * num))
+    for(i = 1; i <= num; i++){
+        let usedNum = Math.floor(Math.random() * possibleNums.length);
+        numOutput.push(possibleNums[usedNum])
+        possibleNums.splice(usedNum, 1)
     }
   
-    return numOutput
+    console.log(numOutput)
   }
   
-  
-  console.log(luckyNumbers(5))
+  luckyNumbers(5)
